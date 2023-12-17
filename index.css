@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  background-color:white;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: #097969;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  transition: color 1s ease, background-color 1s ease;
+}
+ .navbar a:hover{
+  
+  color: #76D7C4;
+ }
+ .image-container {
+  height: 100vh; /* Adjust the height as needed */
+    background-image: url('https://www.mahoora.lk/images/Wildlife-of-Sri-Lanka.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color on top of the image */
+    text-align: center;
+    max-width: 100%;
+    min-width: 60%;
+} 
+
+/* Overlay text styling */
+.overlay-text {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff;
+}
+ .overlay-text h1{
+   font-size: 50px;
+   font-family: monospace;
+
+ }
+ .overlay-text p{
+   font-size: 20px;
+   font-family: monospace;
+ }
+
+/* Button styling */
+.overlay-text button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+} 
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+.full-width-section {
+  width: 100%;
+  background-color: white; /* Set background color if needed */
+  /* Add any other styles you want for your full-width section */
+  flex: 1;
+}
+.content-header {
+  border: none;
+  text-align: justify;
+  size: 100px;
+  background-color: white;
+  right: auto;
+  font-family: 'Courier New', Courier, monospace;
+   padding-left: 20%;
+   padding-top: 0.5%;
+   font-size: xx-large;
+ 
+} 
+.image-content {
+  float: right;
+  width: 40%; /* Adjust the width of the image content */
+
+}
+
+.image-content img {
+  width: 80%;
+  height: auto;
+  display: block; /* Remove default image spacing */
+  padding-right: 2.5%;
+  padding-left: 10%;
+  padding-bottom: 10px;
+   
+}
+.image-content:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  /* Add other hover effects as needed */
+}
+.content{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:23px;
+  padding-left: 10px;
+  padding-top: 5px;
+  word-spacing: 1.5px;
+}
+.width-section{
+  width: 100%;
+  background-color: #f0f0f0; /* Set background color if needed */
+  /* Add any other styles you want for your full-width section */
+  flex: 1;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,187 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  background-color:white;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: #097969;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  transition: color 1s ease, background-color 1s ease;
+  justify-content: right;
+}
+ .navbar a:hover{
+  
+  color: #76D7C4;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.image-container {
+ height: 100vh; /* Adjust the height as needed */
+   background-image: url('https://images.unsplash.com/photo-1558668191-13737cb53fb5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3JpJTIwbGFua2FuJTIwZWxlcGhhbnR8ZW58MHx8MHx8fDA%3D');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff; /* Text color on top of the image */
+   text-align: center;
+   max-width: 100%;
+   min-width: 60%;
+} 
+.overlay-text {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff;
+}
+.overlay-text h1{
+  font-size: 50px;
+  font-family: monospace;
+
+}
+.overlay-text p{
+  font-size: 20px;
+  font-family: monospace;
+}
+.full-width-section {
+  width: 100%;
+  background-color: white; /* Set background color if needed */
+  /* Add any other styles you want for your full-width section */
+  flex: 1;
+}
+.content-header {
+  border: none;
+  text-align: justify;
+  size: 100px;
+  background-color: white;
+  right: auto;
+  font-family: 'Courier New', Courier, monospace;
+   padding-left: 20%;
+   padding-top: 0.5%;
+   font-size: xx-large;
+ 
+} 
+.content{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:23px;
+  padding-left: 10px;
+  padding-top: 5px;
+  word-spacing: 1.5px;
+}
+.card {
+  width: 500px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.map-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.info {
+  padding: 10px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+ .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ }
+ .card:hover .info {
+  opacity: 1;
+  pointer-events: auto;
+  font-size: medium;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: translateZ();
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
